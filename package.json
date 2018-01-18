@@ -1,11 +1,11 @@
 {
   "name": "electron-updater-example",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "build -p always"
+    "publish": "build -w -p always"
   },
   "devDependencies": {
     "electron": "^1.7.9",
@@ -17,11 +17,9 @@
   },
   "build": {
     "appId": "com.github.calbertts.electronupdaterexample",
-    "mac": {
-      "category": "your.app.category.type",
+    "win": {
       "target": [
-        "zip",
-        "dmg"
+        "nsis"
       ]
     }
   }
