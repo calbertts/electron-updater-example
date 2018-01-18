@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -20,7 +20,12 @@
     "win": {
       "target": [
         "nsis"
-      ]
+      ],
+      "publish": [{
+          "provider": "github",
+          "owner": "klikin-labs",
+          "repo": "agora-releases"
+      }]
     }
   }
 }
